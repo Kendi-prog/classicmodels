@@ -1,5 +1,6 @@
 package com.classicmodels.classicmodels.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -47,6 +48,7 @@ public class Customer {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "salesRepEmployeeNumber")
+    @JsonIgnore
     private Employee salesRepEmployeeNumber;
 
     @Column(name = "creditLimit", precision = 10, scale = 2)
