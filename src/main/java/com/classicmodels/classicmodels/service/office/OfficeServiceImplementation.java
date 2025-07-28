@@ -1,4 +1,4 @@
-package com.classicmodels.classicmodels.service;
+package com.classicmodels.classicmodels.service.office;
 
 import com.classicmodels.classicmodels.entities.Office;
 import com.classicmodels.classicmodels.repository.OfficeRepository;
@@ -6,14 +6,13 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
 @Slf4j
-public class OfficeServiceImplementation implements  OfficeService {
+public class OfficeServiceImplementation implements OfficeService {
     private final OfficeRepository officeRepository;
 
 

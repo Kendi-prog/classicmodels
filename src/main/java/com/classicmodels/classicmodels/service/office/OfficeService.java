@@ -1,4 +1,4 @@
-package com.classicmodels.classicmodels.service;
+package com.classicmodels.classicmodels.service.office;
 
 import com.classicmodels.classicmodels.entities.Office;
 import org.springframework.stereotype.Service;

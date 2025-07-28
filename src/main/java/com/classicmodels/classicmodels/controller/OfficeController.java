@@ -1,7 +1,7 @@
-package com.classicmodels.classicmodels.controllers;
+package com.classicmodels.classicmodels.controller;
 
 import com.classicmodels.classicmodels.entities.Office;
-import com.classicmodels.classicmodels.service.OfficeService;
+import com.classicmodels.classicmodels.service.office.OfficeService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
