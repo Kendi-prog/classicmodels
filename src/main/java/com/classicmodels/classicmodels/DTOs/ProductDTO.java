@@ -16,7 +16,7 @@ public class ProductDTO {
     private String productLine;
     private String productScale;
     private String productVendor;
-    private String productDescription;
+//    private String productDescription;
     private Short quantityInStock;
     private BigDecimal buyPrice;
     private BigDecimal msrp;

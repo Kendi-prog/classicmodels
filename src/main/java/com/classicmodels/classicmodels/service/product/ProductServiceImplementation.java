@@ -58,7 +58,7 @@ public class ProductServiceImplementation implements ProductService {
         existingProduct.setBuyPrice(productDTO.getBuyPrice());
         existingProduct.setProductScale(productDTO.getProductScale());
         existingProduct.setProductVendor(productDTO.getProductVendor());
-        existingProduct.setProductDescription(productDTO.getProductDescription());
+//        existingProduct.setProductDescription(productDTO.getProductDescription());
         existingProduct.setMsrp(productDTO.getMsrp());
 
         // Save and return
@@ -81,7 +81,7 @@ public class ProductServiceImplementation implements ProductService {
                 product.getProductLine().getProductLine(),// only the String
                 product.getProductScale(),
                 product.getProductVendor(),
-                product.getProductDescription(),
+//                product.getProductDescription(),
                 product.getQuantityInStock(),
                 product.getBuyPrice(),
                 product.getMsrp()
@@ -101,10 +101,12 @@ public class ProductServiceImplementation implements ProductService {
 
         product.setProductScale(dto.getProductScale());
         product.setProductVendor(dto.getProductVendor());
-        product.setProductDescription(dto.getProductDescription());
+        product.setProductDescription("Product Description");
         product.setQuantityInStock(dto.getQuantityInStock());
         product.setBuyPrice(dto.getBuyPrice());
         product.setMsrp(dto.getMsrp());;
+
+
 
 
         return product;
